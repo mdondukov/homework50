@@ -21,7 +21,7 @@ public class Subscribe {
     @DBRef
     private User subscriber;
     @DBRef
-    private User subscribe;
+    private User subscribeTarget;
     private LocalDate pubDate;
 
     public String getId() {
@@ -40,12 +40,12 @@ public class Subscribe {
         this.subscriber = subscriber;
     }
 
-    public User getSubscribe() {
-        return subscribe;
+    public User getSubscribeTarget() {
+        return subscribeTarget;
     }
 
-    public void setSubscribe(User subscribe) {
-        this.subscribe = subscribe;
+    public void setSubscribeTarget(User subscribeTarget) {
+        this.subscribeTarget = subscribeTarget;
     }
 
     public LocalDate getPubDate() {
