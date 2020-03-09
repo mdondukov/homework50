@@ -19,7 +19,7 @@ public class Like {
     @Id
     private String id = generateId();
     @DBRef
-    private User user;
+    private Publication publication;
     private LocalDate pubDate;
 
     public String getId() {
@@ -30,12 +30,12 @@ public class Like {
         this.id = id;
     }
 
-    public User getUser() {
-        return user;
+    public Publication getPublication() {
+        return publication;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setPublication(Publication publication) {
+        this.publication = publication;
     }
 
     public LocalDate getPubDate() {
