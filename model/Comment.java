@@ -2,15 +2,13 @@ package com.example.homework50.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
-@Document
-public class Publication {
+public class Comment {
     private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
     private static final Random r = new Random();
 
@@ -20,9 +18,7 @@ public class Publication {
 
     @Id
     private String id = generateId();
-    private String title;
-    private String imageUri;
-    private String description;
+    private String text;
     private LocalDate pubDate;
 
     @DBRef
@@ -36,28 +32,12 @@ public class Publication {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getText() {
+        return text;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getImageUri() {
-        return imageUri;
-    }
-
-    public void setImageUri(String imageUri) {
-        this.imageUri = imageUri;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public LocalDate getPubDate() {

@@ -25,9 +25,6 @@ public class User {
     private int subscribesCount = 0;
     private int subscribersCount = 0;
 
-    public User() {
-    }
-
     public String getId() {
         return id;
     }
