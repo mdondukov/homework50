@@ -21,12 +21,11 @@ public class User {
     private String userName;
     private String email;
     private String password;
-    private int publicationsCount;
-    private int subscribesCount;
-    private int subscribersCount;
+    private int publicationsCount = 0;
+    private int subscribesCount = 0;
+    private int subscribersCount = 0;
 
     public User() {
-
     }
 
     public String getId() {
