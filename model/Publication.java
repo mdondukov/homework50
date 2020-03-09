@@ -25,6 +25,13 @@ public class Publication {
     private String description;
     private LocalDate pubDate;
 
+    public Publication(String title, String imageUri, String description, User user) {
+        this.title = title;
+        this.imageUri = imageUri;
+        this.description = description;
+        this.user = user;
+    }
+
     @DBRef
     private User user;
 

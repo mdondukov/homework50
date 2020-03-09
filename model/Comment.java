@@ -27,6 +27,12 @@ public class Comment {
     @DBRef
     private Publication publication;
 
+    public Comment(String text, User user, Publication publication) {
+        this.text = text;
+        this.user = user;
+        this.publication = publication;
+    }
+
     public String getId() {
         return id;
     }

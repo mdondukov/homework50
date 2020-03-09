@@ -24,6 +24,11 @@ public class Subscribe {
     private User subscribeTarget;
     private LocalDate pubDate;
 
+    public Subscribe(User subscriber, User subscribeTarget) {
+        this.subscriber = subscriber;
+        this.subscribeTarget = subscribeTarget;
+    }
+
     public String getId() {
         return id;
     }

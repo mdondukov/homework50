@@ -22,6 +22,10 @@ public class Like {
     private Publication publication;
     private LocalDate pubDate;
 
+    public Like(Publication publication) {
+        this.publication = publication;
+    }
+
     public String getId() {
         return id;
     }

@@ -25,6 +25,12 @@ public class User {
     private int subscribesCount = 0;
     private int subscribersCount = 0;
 
+    public User(String userName, String email, String password) {
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getId() {
         return id;
     }
